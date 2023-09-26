@@ -1,3 +1,42 @@
+/* FONT FACE */
+@font-face {
+  font-family: 'Fraunces 144pt';
+  src: url('../fonts/Fraunces144pt-SemiBold.eot');
+  src: url('../fonts/Fraunces144pt-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Fraunces144pt-SemiBold.woff2') format('woff2'),
+    url('../fonts/Fraunces144pt-SemiBold.woff') format('woff'),
+    url('../fonts/Fraunces144pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Regular.eot');
+  src: url('../fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Manrope-Regular.woff2') format('woff2'),
+    url('../fonts/Manrope-Regular.woff') format('woff'),
+    url('../fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* CUSTOM PROPS */
+
+:root {
+  --heading-font-family: 'Fraunces 144pt', "Times New Roman", serif;
+  --body-font-family: "Manrope", "Arial", sans-serif;
+  --dark-purple: #24053e;
+  --green: #44ffa1;
+  --davys-grey: #584d62;
+  --ghost-pink: #fcf8ff;
+  --white: #fff;
+}
+
+/* GLOBAL STYLES */
 html {
   box-sizing: border-box;
   height: 100%;
@@ -69,11 +108,10 @@ select:-webkit-autofill:focus {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1154px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 
