@@ -127,7 +127,7 @@ select:-webkit-autofill:focus {
 
 .container {
   width: 100%;
-  max-width: 1146px;
+  max-width: 1194px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -137,7 +137,7 @@ select:-webkit-autofill:focus {
 /* LOGO */
 
 .logo {
-  display: block;
+  display: flex;
   text-decoration: none;
   transition: opacity ease var(--transition-duration);
 }
@@ -154,10 +154,10 @@ select:-webkit-autofill:focus {
   display: flex;
 }
 
-.logo-img {
+.logo__img {
   display: block;
-  width: 97px;
-  height: 26px;
+  width: 96px;
+  height: 25px;
 }
 
 /* BUTTON */
@@ -198,8 +198,8 @@ select:-webkit-autofill:focus {
 /* SITE HEADER HERO WRAPPER */
 
 .site-header-hero-wrappper {
-  background-color: var(--dark-purple);
-  background-image: url('../img/hero-bg.svg');
+  /* background-color: var(--dark-purple); */
+  background-image: url('../img/hero-bg-mobile.svg');
   background-repeat: no-repeat;
   background-position: top center;
   /* height: 482px; */
@@ -226,7 +226,7 @@ select:-webkit-autofill:focus {
   color: var(--white);
   text-decoration: none;
   font-size: 16px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.16px;
@@ -269,11 +269,16 @@ select:-webkit-autofill:focus {
   margin-bottom: 64px;
 }
 
+.hero__picture {
+  display: flex;
+  width: 298px;
+  height: 178px;
+}
+
 .hero__img {
   display: block;
   width: 298px;
   height: 178px;
-
 }
 
 
