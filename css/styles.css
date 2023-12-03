@@ -1,47 +1,45 @@
 /* FONT FACE */
 @font-face {
-  font-family: 'Fraunces 144pt';
-  src: url('../fonts/Fraunces144pt-SemiBold.eot');
-  src: url('../fonts/Fraunces144pt-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Fraunces144pt-SemiBold.woff2') format('woff2'),
-    url('../fonts/Fraunces144pt-SemiBold.woff') format('woff'),
-    url('../fonts/Fraunces144pt-SemiBold.ttf') format('truetype');
+  font-family: "Fraunces 144pt";
+  src: url("../fonts/Fraunces144pt-SemiBold.eot");
+  src: url("../fonts/Fraunces144pt-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Fraunces144pt-SemiBold.woff2") format("woff2"),
+    url("../fonts/Fraunces144pt-SemiBold.woff") format("woff"),
+    url("../fonts/Fraunces144pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Manrope';
-  src: url('../fonts/Manrope-Regular.eot');
-  src: url('../fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Manrope-Regular.woff2') format('woff2'),
-    url('../fonts/Manrope-Regular.woff') format('woff'),
-    url('../fonts/Manrope-Regular.ttf') format('truetype');
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.eot");
+  src: url("../fonts/Manrope-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope-Regular.woff") format("woff"),
+    url("../fonts/Manrope-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Manrope';
-  src: url('../fonts/Manrope-Bold.eot');
-  src: url('../fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Manrope-Bold.woff2') format('woff2'),
-    url('../fonts/Manrope-Bold.woff') format('woff'),
-    url('../fonts/Manrope-Bold.ttf') format('truetype');
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.eot");
+  src: url("../fonts/Manrope-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope-Bold.woff") format("woff"),
+    url("../fonts/Manrope-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
-
-
 /* CUSTOM PROPS */
 
 :root {
   /* fonts */
-  --heading-font-family: 'Fraunces 144pt', "Times New Roman", serif;
+  --heading-font-family: "Fraunces 144pt", "Times New Roman", serif;
   --body-font-family: "Manrope", "Arial", sans-serif;
 
   /* colors */
@@ -86,7 +84,6 @@ img {
   height: auto;
 }
 
-
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -114,7 +111,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }  */
 
-
 /* PLACEHOLDER COLOR
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
@@ -132,7 +128,6 @@ select:-webkit-autofill:focus {
   padding-right: 16px;
   margin: 0 auto;
 }
-
 
 /* LOGO */
 
@@ -189,7 +184,6 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
-
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
@@ -198,13 +192,22 @@ select:-webkit-autofill:focus {
 /* SITE HEADER HERO WRAPPER */
 
 .site-header-hero-features-wrappper {
+  position: relative;
   /* background-color: var(--dark-purple); */
-  background-image: url('../img/hero-bg-mobile.svg'), url('../img/features-bg-mobile.svg');
+  background-image: url("../img/hero-bg-mobile.svg"),
+    url("../img/features-bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: top center, bottom center;
   /* height: 482px; */
 }
 
+/* PATTERNS */
+
+.pattern-left,
+.pattern-right {
+  position: absolute;
+  display: none;
+}
 
 /* SITE-HEADER */
 
@@ -212,14 +215,11 @@ select:-webkit-autofill:focus {
   padding: 32px 0 66px;
 }
 
-
 .site-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 .site-header__link {
   display: inline-block;
@@ -231,7 +231,8 @@ select:-webkit-autofill:focus {
   line-height: 32px;
   letter-spacing: -0.16px;
   border-bottom: 3px solid var(--green);
-  transition: color ease var(--transition-duration), opacity ease var(--transition-duration);
+  transition: color ease var(--transition-duration),
+    opacity ease var(--transition-duration);
 }
 
 .site-header__link:hover {
@@ -264,7 +265,6 @@ select:-webkit-autofill:focus {
   border-bottom: 2px solid var(--green);
 }
 
-
 .hero__button {
   margin-bottom: 64px;
 }
@@ -280,7 +280,6 @@ select:-webkit-autofill:focus {
   width: 298px;
   height: 178px;
 }
-
 
 /* features */
 
@@ -324,11 +323,10 @@ select:-webkit-autofill:focus {
 
 /* .features-list__info {} */
 
-.spec-list__title {
+.feature-list__title {
   margin-top: 0;
   margin-bottom: 16px;
   color: var(--dark-purple);
-  text-align: center;
   font-family: var(--heading-font-family);
   font-size: 28px;
   font-style: normal;
@@ -348,7 +346,6 @@ select:-webkit-autofill:focus {
   line-height: 28px;
   /* 175% */
 }
-
 
 /* FOUNDER */
 
@@ -410,7 +407,6 @@ select:-webkit-autofill:focus {
   padding-bottom: 64px;
 }
 
-
 .site-footer__container {
   width: 116px;
   height: 102px;
@@ -419,26 +415,181 @@ select:-webkit-autofill:focus {
   justify-content: space-between;
 }
 
-.logo {}
-
-.site-footer__logo {}
-
-
 .site-footer__socials {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-.site-footer__socials-item {
-
+.site-footer__socials-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .site-footer__socials-link {
   display: flex;
+  color: var(--davys-grey);
 }
+
+.site-footer__socials-link:hover {
+  color: var(--dark-purple);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 376px) {
+  .site-header-hero-features-wrappper {
+    /* background-color: var(--dark-purple); */
+    background-image: url("../img/hero-bg-tablet.svg"),
+      url("../img/features-bg-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+    /* height: 482px; */
+  }
+}
+
+
+/* 550 px */
+@media screen and (min-width: 550px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .pattern-left,
+  .pattern-right {
+    display: block;
+  }
+
+  .pattern-left {
+    top: 72px;
+    left: -227px;
+  }
+
+  .pattern-right {
+    top: 250px;
+    right: -93px;
+  }
+
+  .hero__picture {
+    width: 479px;
+    height: 286px;
+  }
+
+  .hero__img {
+    width: 479px;
+    height: 286px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+
+  .hero__button {
+    margin-bottom: 52px;
+  }
+
+  .features-list {
+    margin-top: 65px;
+  }
+
+  .features-list__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .features-list__item {
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .features-list__number {
+    margin-bottom: 0;
+    border-radius: 50%;
+  }
+
+  .features-list__info,
+  .features-list__paragraph {
+    text-align: left;
+  }
+
+
+  .founder-section {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .founder-section__container {
+    height: 526px;
+    
+  }
+
+
+  .founder-section__info {
+    width: 514px;
+    height: 375px;
+    text-align: left;
+    padding: 48px 56px;
+    top: -130px;
+    align-self: flex-end;
+  }
+}
+
+.founder-section__title {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.founder-section__img {
+  align-self: start;
+}
+
+@media screen and (min-width: 769px) {
+  .site-header-hero-features-wrappper {
+    /* background-color: var(--dark-purple); */
+    background-image: url("../img/hero-bg-desktop.svg"),
+      url("../img/features-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+    /* height: 482px; */
+  }
+
+  .hero__picture {
+    width: 715px;
+    height: 427px;
+  }
+
+  .hero__img {
+    width: 715px;
+    height: 427px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RETINA BACKGROUNDS */
